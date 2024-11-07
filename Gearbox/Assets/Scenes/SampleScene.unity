@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1045991185}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 7
+    OrthographicSize: 5.073354
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -8427,6 +8427,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420036}
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
   m_Layer: 0
@@ -8471,7 +8472,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 5.073354
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8614,6 +8615,18 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aaad6427b3a5634ca8abc8936cd163f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &544212681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5214355834844766643, guid: 98634971e7377934d93831775546a83b, type: 3}
@@ -11405,6 +11418,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 905469508, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
     - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: frame0
+      value: 
+      objectReference: {fileID: 1304416743, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+    - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: frame1
+      value: 
+      objectReference: {fileID: 983384749, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+    - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: broken0
+      value: 
+      objectReference: {fileID: 905469508, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+    - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: broken1
+      value: 
+      objectReference: {fileID: 1767480182, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+    - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: animType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: movementHandler
       value: 
       objectReference: {fileID: 1045991186}
@@ -11819,7 +11852,7 @@ Grid:
   m_GameObject: {fileID: 2123531827}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: -0.0001, y: -0.0001, z: 0}
+  m_CellGap: {x: -0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &2123531830
