@@ -7,13 +7,8 @@ public class destroyDetect : MonoBehaviour
     public ParticleSystem particleSystem1;
     public MovementHandler movementHandler;
     public Sprite idle;
-    public Sprite frame0;
-    public Sprite frame1;
-    public Sprite frame2;
-    public Sprite frame3;
-    public Sprite broken0;
-    public Sprite broken1;
-    public Sprite broken2;
+    public Sprite[] frames;
+    public Sprite[] brokenSprites;
 
     public myEnum animType = new myEnum();  // this public var should appear as a drop down
     public SpriteRenderer spriteRenderer;
@@ -39,34 +34,45 @@ public class destroyDetect : MonoBehaviour
     }
 
     IEnumerator OnTriggerEnter2D(Collider2D other) {
-    if (other.gameObject.tag == "Player" && !destroyed)
-    {
-        if (movementHandler.velocityMagnitude > 2){
+    if (other.gameObject.tag == "Player" && !destroyed && movementHandler.velocityMagnitude > 2){
+        if (animType == myEnum.basic){
             destroyed = true;
-            spriteRenderer.sprite = broken0;
+            spriteRenderer.sprite = brokenSprites[0];
             particleSystem1.Play();
-            yield return new WaitForSeconds(2f);
-            spriteRenderer.sprite = broken1;
+            yield break;
+        }
+        if (animType == myEnum.loop){
+            destroyed = true;
+            spriteRenderer.sprite = brokenSprites[0];
+            particleSystem1.Play();
+            yield break;
+        }
+        if (animType == myEnum.person){
+            destroyed = true;
+            spriteRenderer.sprite = brokenSprites[0];
+            particleSystem1.Play();
+            yield return new WaitForSeconds(1.5f);
+            spriteRenderer.sprite = brokenSprites[1];
+        }
+        if (animType == myEnum.randomBreakSprite){
+            destroyed = true;
+            spriteRenderer.sprite = brokenSprites[Random.Range(0, brokenSprites.Length)];
+            particleSystem1.Play();
+            yield break;
         }
     }
     }
     IEnumerator PlayAnim(){
         while (!destroyed){
-            if (frame0 != null){
-                spriteRenderer.sprite = frame0;
+            if (frames.Length == 0){
+                yield break;
+            }
+            for (int i = 0; i < frames.Length; i++){
+                spriteRenderer.sprite = frames[i];
                 yield return new WaitForSeconds(.3f);
-            }
-            if (frame1 != null){
-            spriteRenderer.sprite = frame1;
-            yield return new WaitForSeconds(.3f);
-            }
-            if (frame2 != null){
-            spriteRenderer.sprite = frame2;
-            yield return new WaitForSeconds(.3f);
-            }
-            if (frame3 != null){
-            spriteRenderer.sprite = frame3;
-            yield return new WaitForSeconds(.3f);
+                if (destroyed){
+                    yield break;
+                }
             }
         }
     }

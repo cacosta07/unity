@@ -17,7 +17,7 @@ public class rpmmanager : MonoBehaviour
     void Update()
     {
         var eulerAngles = transform.eulerAngles;
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(eulerAngles.x, eulerAngles.y, (-movementHandler.rpm/22.35f)+135), 0.2f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(eulerAngles.x, eulerAngles.y, (-movementHandler.rpm/22.35f)+135), 0.5f);
         if (movementHandler.ignition == false & movementHandler.isTurning == false){
             image.GetComponent<Image>().color = new Color32(255,255,255,100);
         }

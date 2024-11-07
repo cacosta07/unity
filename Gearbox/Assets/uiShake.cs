@@ -15,7 +15,7 @@ public class uiShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        transform.position = new Vector3(transform.position.x, transform.position.y + movementHandler.velocityMagnitude, transform.position.z);
+       Vector3 position = transform.position;
+        transform.position = new Vector3(position[0] + Mathf.Sin(movementHandler.velocityMagnitude), position[1] + Mathf.Sin(movementHandler.velocityMagnitude), transform.position.z);
     }
 }

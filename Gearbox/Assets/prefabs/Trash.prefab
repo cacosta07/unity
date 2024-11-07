@@ -101,7 +101,10 @@ MonoBehaviour:
   particleSystem1: {fileID: 0}
   movementHandler: {fileID: 0}
   idle: {fileID: 673955780, guid: 020912f9bed36b5488869fde28b5f76a, type: 3}
-  broken: {fileID: -1963760468, guid: 020912f9bed36b5488869fde28b5f76a, type: 3}
+  frames: []
+  brokenSprites:
+  - {fileID: -1963760468, guid: 020912f9bed36b5488869fde28b5f76a, type: 3}
+  animType: 0
   spriteRenderer: {fileID: 873671444905513364}
 --- !u!61 &873671444905513366
 BoxCollider2D:
