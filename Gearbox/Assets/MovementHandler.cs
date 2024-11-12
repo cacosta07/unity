@@ -21,6 +21,7 @@ public class MovementHandler : MonoBehaviour
     public float brake;
     public float steering;
     public Vector2 velocityRelative;
+    public AudioHandler audioHandler;
     // Start is called before the first frame update
     void Start()
     {
@@ -153,6 +154,7 @@ public class MovementHandler : MonoBehaviour
     {
         isTurning = true;
         float starterElapsedTime = 0f;
+        audioHandler.audioSource2.Play();
 
         while (starterElapsedTime < 1f)
         {   

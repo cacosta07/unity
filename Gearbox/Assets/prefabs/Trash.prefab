@@ -100,11 +100,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleSystem1: {fileID: 0}
   movementHandler: {fileID: 0}
-  idle: {fileID: 673955780, guid: 020912f9bed36b5488869fde28b5f76a, type: 3}
-  frames: []
+  idle: {fileID: 1304416743, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+  frames:
+  - {fileID: 1304416743, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+  - {fileID: 983384749, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
   brokenSprites:
-  - {fileID: -1963760468, guid: 020912f9bed36b5488869fde28b5f76a, type: 3}
-  animType: 0
+  - {fileID: 905469508, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+  - {fileID: 1767480182, guid: f429b3529d0c0324daeb80a2bb478adf, type: 3}
+  animType: 2
   spriteRenderer: {fileID: 873671444905513364}
 --- !u!61 &873671444905513366
 BoxCollider2D:
