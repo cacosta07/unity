@@ -5,9 +5,10 @@ using UnityEngine;
 public class AudioHandler : MonoBehaviour
 {
     public AudioSource audioSource;
-    public AudioSource audioSource2;
+    public AudioSource audioSourceKeys;
+    public AudioSource audioSourceStall;
+    [SerializeField] bool holdIgnitionValue = false;
     public MovementHandler movementHandler;
-    public IEnumerator Starter;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,9 @@ public class AudioHandler : MonoBehaviour
     {
         audioSource.volume = (movementHandler.rpm) / 6000;
         audioSource.pitch = (movementHandler.rpm+3000) / 7500;
+        if (holdIgnitionValue == true && movementHandler.ignition == false){
+            audioSourceStall.Play();
+        }
+        holdIgnitionValue = movementHandler.ignition;
     }
 }
