@@ -1,4 +1,0 @@
-repository "Gearbox@unity_C8B0F3BB08958DF316F2@cloud"
-  path "/"
-    br "/main"
-    co "/main"
