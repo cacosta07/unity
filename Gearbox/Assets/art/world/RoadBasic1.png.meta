@@ -128,7 +128,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 0500e6acf11550849a2722a674d9ba1f
@@ -149,8 +153,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 5, y: 16}
+        - {x: -4, y: 12}
+        - {x: -12, y: 4}
+        - {x: -16, y: -5}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      tessellationDetail: 1
       bones: []
       spriteID: ad8689ea19625244da92e8cbc5c0af6f
       internalID: 15937630
@@ -170,8 +181,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 12, y: 4}
+        - {x: 4, y: 12}
+        - {x: -5, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: -5}
+      tessellationDetail: 1
       bones: []
       spriteID: 8b5f1ffe9b539434ab9f81d4c9310f70
       internalID: -1131129993
@@ -288,7 +306,7 @@ TextureImporter:
       name: RoadBasic1_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 288
         y: 96
         width: 32
         height: 32
@@ -338,8 +356,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: 5}
+        - {x: -12, y: -4}
+        - {x: -4, y: -12}
+        - {x: 5, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      tessellationDetail: 1
       bones: []
       spriteID: c38a9126c2bc36e48bbcb79ecde2eeb7
       internalID: 839790564
@@ -359,8 +384,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 12, y: -4}
+        - {x: 16, y: 5}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: -5, y: -16}
+        - {x: 4, y: -12}
+      tessellationDetail: 1
       bones: []
       spriteID: 5fc4011e30009564a8edff3dc1fe3047
       internalID: 1994545884
@@ -506,8 +538,23 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 13, y: 6}
+        - {x: 12, y: 9}
+        - {x: 8, y: 13}
+        - {x: 5, y: 14}
+        - {x: -3, y: 14}
+        - {x: -6, y: 13}
+        - {x: -10, y: 9}
+        - {x: -11, y: 6}
+        - {x: -11, y: -3}
+        - {x: -6, y: -9}
+        - {x: -3, y: -10}
+        - {x: 5, y: -10}
+        - {x: 8, y: -9}
+        - {x: 12, y: -5}
+        - {x: 13, y: -2}
+      tessellationDetail: 1
       bones: []
       spriteID: 5d43030aa62e78c42bf5da9da7b4cd5b
       internalID: -1980592493
@@ -527,7 +574,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 5fae5ea0b42722745945d8b260835219
@@ -548,8 +599,12 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      tessellationDetail: 1
       bones: []
       spriteID: 0fdc90f6618c5504184b9e693228b997
       internalID: 1212062976
@@ -569,7 +624,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 8914e3d582f3f8547895524e03d27b3b
@@ -695,7 +754,18 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -4, y: 10}
+        - {x: -11, y: 7}
+        - {x: -12, y: 5}
+        - {x: -12, y: -1}
+        - {x: -9, y: -2}
+        - {x: -6, y: -6}
+        - {x: 0, y: -9}
+        - {x: 8, y: -9}
+        - {x: 11, y: -2}
+        - {x: 11, y: 6}
+        - {x: 6, y: 10}
       tessellationDetail: 0
       bones: []
       spriteID: 90ed73c2ea4560946bfaa0323e572cea
@@ -716,7 +786,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 22af3f8899d10844f924d3b9b5483abb
@@ -737,7 +811,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 7e576f08256b83c45bd0667f7ab5e630
@@ -758,7 +836,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: e65a33da957ab7343a5c61321dadaed6
@@ -872,6 +954,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: RoadBasic1_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6afb866da9b8cb40b8342b505a2f483
+      internalID: -1525178541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadBasic1_37
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd409a28e46e767468092c7d325cec22
+      internalID: -1938368388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadBasic1_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189637500c2e7294d8435f8448c23f09
+      internalID: -201596016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadBasic1_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad340a97c1ef1448ab258182bfa2aeb
+      internalID: -1346032472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -913,6 +1079,10 @@ TextureImporter:
       RoadBasic1_33: -179099930
       RoadBasic1_34: 1137842046
       RoadBasic1_35: 670672761
+      RoadBasic1_36: -1525178541
+      RoadBasic1_37: -1938368388
+      RoadBasic1_38: -201596016
+      RoadBasic1_39: -1346032472
       RoadBasic1_4: 1694387231
       RoadBasic1_5: -850201125
       RoadBasic1_6: -1576400266
