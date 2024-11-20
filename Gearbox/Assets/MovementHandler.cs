@@ -33,7 +33,7 @@ public class MovementHandler : MonoBehaviour
     {
         position = transform.position;
         velocityMagnitude = rb.velocity.magnitude;
-        traction = Mathf.Clamp01(-Mathf.Abs(rb.angularVelocity/1000)+1);
+        traction = Mathf.Clamp01(-Mathf.Abs(rb.angularVelocity/1800)+1);
         velocityRelative = transform.InverseTransformDirection(rb.velocity);
         absGear = Mathf.Abs(gear);
 
@@ -78,9 +78,10 @@ public class MovementHandler : MonoBehaviour
             //rpm += 2.25f * (((Mathf.Clamp01(throttle)*((3.5f)+absGear/1.7f))))+1;
             //rpm += (2.35f * (absGear*2)+1) * ((Mathf.Clamp01(throttle)*6)*((1/(absGear+1)))*100)+1;
             //rpm *= ((throttle+1)*(1.04f-transmissionEfficiency));
-            rpm += 400 * throttle * (rpm/4000) / (absGear+1);
+            rpm += throttle * (rpm/11) / (absGear+1);
             rpm += Random.Range(-3 * (rpm/2000), 3 * (rpm/2000));
-            engineForce = (Mathf.Clamp(rpm-700, 0, rpm)/4000)*ratio;
+            engineForce = (Mathf.Clamp(rpm-700, 0, rpm)/4000)*Mathf.InverseLerp(absGear*27, 0, velocityRelative[1])*(absGear*2.3f);
+            Debug.Log((Mathf.InverseLerp(absGear*27, 0, velocityRelative[1]*27)));
             if (rpm < 900)
             {
                 rpm += transmissionEfficiency*5;

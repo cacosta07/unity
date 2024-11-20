@@ -26,10 +26,7 @@ public class lightingColor : MonoBehaviour
         }
         if (TimeOfDay >= 12)
         {
-            //volume.colorGrading.settings = new ColorGrading
-            //{
-            //    temperature = (TimeOfDay-12)*2,
-            //};
+            colorGrading.temperature.value = Mathf.Lerp(0, 100, TimeOfDay / 24);
         }
     }
 }
