@@ -19,7 +19,7 @@ public class lightingColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TimeOfDay += Time.deltaTime / 1;
+        TimeOfDay += Time.deltaTime / 12;
         if (TimeOfDay >= 24)
         {
             TimeOfDay = 0;

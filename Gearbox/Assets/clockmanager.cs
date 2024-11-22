@@ -6,6 +6,7 @@ public class clockmanager : MonoBehaviour
 {
     public MovementHandler movementHandler;
     public lightingColor lightingColor;
+    public int isminutesequals60;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,6 @@ public class clockmanager : MonoBehaviour
     void Update()
     {
         var eulerAngles = transform.eulerAngles;
-        transform.rotation = Quaternion.Euler(eulerAngles.x, eulerAngles.y, (-lightingColor.TimeOfDay*15));
+        transform.rotation = Quaternion.Euler(eulerAngles.x, eulerAngles.y, (-lightingColor.TimeOfDay*15*(isminutesequals60)));
     }
 }
