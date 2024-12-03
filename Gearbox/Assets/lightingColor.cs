@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class lightingColor : MonoBehaviour
 {
 
-    public PostProcessVolume volume;
-    public ColorGrading colorGrading;
+    public VolumeProfile volume;
+    //public ColorGrading colorGrading;
     public float TimeOfDay;
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class lightingColor : MonoBehaviour
         }
         if (TimeOfDay >= 12)
         {
-            colorGrading.temperature.value = Mathf.Lerp(0, 100, TimeOfDay / 24);
+            //colorGrading.temperature.value = Mathf.Lerp(0, 100, TimeOfDay / 24);
         }
     }
 }

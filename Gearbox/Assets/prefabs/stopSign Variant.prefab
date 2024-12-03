@@ -17,11 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.0016975
+      value: 15.53
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.0656705
+      value: 16.44
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56,12 +56,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513366, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.48130155
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513366, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6937814
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513366, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.015807033
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513366, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.64918685
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513366, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513386, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_Name
-      value: stopSign
+      value: stopSign Variant
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513387, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: idle
