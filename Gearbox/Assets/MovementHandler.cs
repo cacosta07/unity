@@ -66,10 +66,16 @@ public class MovementHandler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X)){
             gear += 1;
+            if (ratio != 0){
+                rpm *= Mathf.Abs(ratio);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Z)){
             gear -= 1;
+            if (ratio != 0){
+                rpm *= Mathf.Abs(ratio);
+            }
         }
 
         gear = Mathf.Clamp(gear, -1, 5);
