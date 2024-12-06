@@ -86,7 +86,7 @@ public class MovementHandler : MonoBehaviour
             //rpm *= ((throttle+1)*(1.04f-transmissionEfficiency));
             rpm += throttle * (rpm/11) / (absGear+1);
             rpm += Random.Range(-3 * (rpm/2000), 3 * (rpm/2000));
-            engineForce = (Mathf.Clamp(rpm-700, 0, rpm)/4000)*Mathf.InverseLerp(gear*27, 0, velocityRelative[1])*(gear*2.3f);
+            engineForce = (Mathf.Clamp(rpm-700, 0, rpm)/4000)*Mathf.InverseLerp(gear*27, 0, velocityRelative[1])*(gear*2.3f) * traction;
             Debug.Log((Mathf.InverseLerp(gear*27, 0, velocityRelative[1]*27)));
             if (rpm < 900)
             {
