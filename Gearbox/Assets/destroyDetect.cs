@@ -24,6 +24,9 @@ public class destroyDetect : MonoBehaviour
         spriteRenderer.sprite = idle;
         if (animType == myEnum.loop){
             StartCoroutine (PlayAnim());
+        }else if (animType == myEnum.person)
+        {
+            StartCoroutine (PlayAnim());
         }
     }
 

@@ -33,7 +33,7 @@ public class MovementHandler : MonoBehaviour
     {
         position = transform.position;
         velocityMagnitude = rb.velocity.magnitude;
-        traction = Mathf.Clamp01(-Mathf.Abs(rb.angularVelocity/1800)+1);
+        traction = Mathf.Clamp01(-Mathf.Abs(rb.angularVelocity/2000)+1);
         velocityRelative = transform.InverseTransformDirection(rb.velocity);
         absGear = Mathf.Abs(gear);
 
@@ -67,7 +67,7 @@ public class MovementHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X)){
             gear += 1;
             if (ratio != 0){
-                rpm *= Mathf.Abs(ratio);
+                rpm /= Mathf.Abs(ratio);
             }
         }
 

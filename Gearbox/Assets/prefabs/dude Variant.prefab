@@ -16,6 +16,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6022022
       objectReference: {fileID: 0}
@@ -55,6 +67,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 873671444905513365, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 873671444905513366, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2
@@ -73,3 +89,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+--- !u!1 &4364369950541607572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 873671444905513386, guid: 994c8310788936942bd33eb0cc834ea8, type: 3}
+  m_PrefabInstance: {fileID: 3498941580869706558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1277482350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364369950541607572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.3329448, y: -0.9950867, z: 0}
+  - {x: -0.13149619, y: -0.2676521, z: 0}
+  - {x: 0.3476853, y: -0.2578259, z: 0}
+  - {x: 0.3722521, y: -0.9262993, z: 0}
+  - {x: 0.15498722, y: -0.9304461, z: 0}
+  - {x: 0.15498722, y: -0.6946039, z: 0}
+  - {x: 0.06654621, y: -0.42928147, z: 0}
+  - {x: -0.184036, y: -0.9500996, z: 0}
+  m_ShapePathHash: -883299838
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -2190604
+  m_LocalBounds:
+    m_Center: {x: 0.019653648, y: -0.6264563, z: 0}
+    m_Extent: {x: 0.35259846, y: 0.3686304, z: 0}
